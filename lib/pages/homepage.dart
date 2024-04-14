@@ -7,7 +7,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Catatan Keuangan'),
+        title: const Text('Catatan Keuangan',
+            style: TextStyle(fontFamily: 'Poppins')),
         centerTitle: true,
         actions: [
           IconButton(
@@ -28,12 +29,13 @@ class HomePage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
+                fontFamily: 'Poppins',
               ),
             ),
             const TextField(
               decoration: InputDecoration(
-                hintText: 'Masukkan jumlah pemasukan',
-              ),
+                  hintText: 'Masukkan jumlah pemasukan',
+                  hintStyle: TextStyle(fontFamily: 'Poppins')),
             ),
             const SizedBox(height: 20.0),
             const Text(
@@ -41,19 +43,25 @@ class HomePage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
+                fontFamily: 'Poppins',
               ),
             ),
             const TextField(
               decoration: InputDecoration(
-                hintText: 'Masukkan jumlah pengeluaran',
-              ),
+                  hintText: 'Masukkan jumlah pengeluaran',
+                  hintStyle: TextStyle(fontFamily: 'Poppins')),
             ),
             const SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
                 // Implementasi logika untuk menyimpan catatan keuangan
               },
-              child: const Text('Simpan'),
+              child: const Text(
+                'Simpan',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                ),
+              ),
             ),
           ],
         ),
@@ -74,9 +82,11 @@ class HomePage extends StatelessWidget {
           ),
         ],
         selectedItemColor: Colors.pink[100],
+        selectedLabelStyle:
+            const TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.bold),
+        unselectedLabelStyle: const TextStyle(fontFamily: 'Poppins'),
         onTap: (int index) {
           if (index == 2) {
-            // Ketika ikon logout diklik
             Navigator.pushAndRemoveUntil(
               context,
               MaterialPageRoute(

@@ -82,7 +82,6 @@ class LoginPage extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      // Widget lainnya
                       const SizedBox(height: 20.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -108,16 +107,16 @@ class LoginPage extends StatelessWidget {
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                                 fontFamily: 'Poppins',
-                              ), //textstyle
-                            ), //text
-                          ), //textbutton
+                              ),
+                            ),
+                          ),
                         ],
-                      ), //row
+                      ),
                     ],
-                  ), //column
+                  ),
                 ],
-              ), //column
-            ), //padding
+              ),
+            ),
           ],
         ),
       ),
