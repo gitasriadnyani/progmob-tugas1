@@ -147,16 +147,16 @@ class SignUpPage extends StatelessWidget {
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                                 fontFamily: 'Poppins',
-                              ), //textstyle
-                            ), //text
-                          ), //textbutton
+                              ),
+                            ),
+                          ),
                         ],
-                      ), //row
+                      ),
                     ],
-                  ), //column
+                  ),
                 ],
-              ), //column
-            ), //padding
+              ),
+            ),
           ],
         ),
       ),
